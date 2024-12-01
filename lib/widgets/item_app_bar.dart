@@ -6,7 +6,7 @@ class ItemAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: const Text("Item"),
+      title: const Text("Product"),
       centerTitle: true,
       leading: Padding(
         padding: const EdgeInsets.only(left: 20.0),
