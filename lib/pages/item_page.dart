@@ -1,4 +1,5 @@
 import 'package:clippy_flutter/arc.dart';
+import 'package:fashion_shop_app/widgets/item_bottom_navbar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
@@ -25,13 +26,13 @@ class ItemPage extends StatelessWidget {
         children: [
           const ItemAppBar(),
           Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(15.0),
             child: AspectRatio(
                 aspectRatio: 1,
                 child: Image.asset("images/1.png", width: double.infinity)),
           ),
           Arc(
-              height: 30,
+              height: 25,
               edge: Edge.TOP,
               arcType: ArcType.CONVEY,
               child: Container(
@@ -42,7 +43,7 @@ class ItemPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(top: 50, bottom: 20),
+                      padding: const EdgeInsets.only(top: 35, bottom: 10),
                       child: Row(
                         children: [
                           Text("Product Title",
@@ -51,7 +52,7 @@ class ItemPage extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(top: 5, bottom: 10),
+                      padding: const EdgeInsets.only(bottom: 10),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -111,14 +112,14 @@ class ItemPage extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10),
+                        padding: const EdgeInsets.symmetric(vertical: 3),
                         child: Text(
-                          "Detailed description of item, mnore write up here",
+                          "Detailed description of item, mnore write up here to give more descrption to item",
                           style: Theme.of(context).textTheme.displaySmall,
                           textAlign: TextAlign.justify,
                         )),
                     Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 10),
+                      padding: const EdgeInsets.symmetric(vertical: 5),
                       child: Row(
                         children: [
                           Text(
@@ -188,12 +189,13 @@ class ItemPage extends StatelessWidget {
                           )
                         ],
                       ),
-                    )
+                    ),
                   ],
                 ),
               )),
         ],
       ),
+      bottomNavigationBar: const ItemBottomNavbar(),
     );
   }
 }
