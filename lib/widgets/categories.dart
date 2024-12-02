@@ -8,6 +8,7 @@ final List<String> nameOfCategoryItems = [
   "Luggage",
   "HandBag",
   "Heels",
+  "Luxury Watch"
 ];
 
 class MyCategories extends StatelessWidget {
@@ -18,7 +19,7 @@ class MyCategories extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: [
-          for (int i = 1; i <= 6; i++)
+          for (int i = 1; i <= 7; i++)
             ClipRRect(
               borderRadius: const BorderRadius.all(Radius.circular(20)),
               child: Container(

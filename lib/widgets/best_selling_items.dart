@@ -14,7 +14,7 @@ class MyBestSellingItems extends StatelessWidget {
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
       children: [
-        for (int i = 1; i <= 6; i++)
+        for (int i = 1; i <= 7; i++)
           Container(
             padding: const EdgeInsets.only(left: 5, right: 5, top: 10),
             margin: const EdgeInsets.only(right: 8, left: 8, bottom: 8, top: 8),
